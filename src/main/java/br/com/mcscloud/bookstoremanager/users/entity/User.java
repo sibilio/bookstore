@@ -1,6 +1,7 @@
 package br.com.mcscloud.bookstoremanager.users.entity;
 
 import br.com.mcscloud.bookstoremanager.books.entity.Book;
+import br.com.mcscloud.bookstoremanager.entity.Auditable;
 import br.com.mcscloud.bookstoremanager.users.enums.Gender;
 import lombok.Data;
 
@@ -10,7 +11,7 @@ import java.util.List;
 
 @Data
 @Entity
-public class User {
+public class User extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
