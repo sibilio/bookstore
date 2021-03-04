@@ -1,6 +1,7 @@
 package br.com.mcscloud.bookstoremanager.books.entity;
 
 import br.com.mcscloud.bookstoremanager.author.entity.Author;
+import br.com.mcscloud.bookstoremanager.entity.Auditable;
 import br.com.mcscloud.bookstoremanager.publishers.entity.Publisher;
 import br.com.mcscloud.bookstoremanager.users.entity.User;
 import lombok.Data;
@@ -9,7 +10,7 @@ import javax.persistence.*;
 
 @Data
 @Entity
-public class Book {
+public class Book extends Auditable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
