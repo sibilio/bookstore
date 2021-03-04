@@ -17,6 +17,6 @@ public class BookController {
     })
     @GetMapping
     public String hello() {
-        return "\"resposta\":\"Hello Bookstore Mapping\"";
+        return "Olá Bookstore Manage, Estou fazendo um pull request";
     }
 }
